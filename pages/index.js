@@ -163,7 +163,11 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome!</h1>
+          <h1 className={styles.title}>Welcome to cat and fish project</h1>
+          <div>
+              <div className={styles.description}>
+Still in the development phase, for now, just testing a simple burn function
+              </div>
           {walletConnected ? (
             <div>
               <div className={styles.description}>
