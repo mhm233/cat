@@ -1,26 +1,44 @@
-html,
-body {
+/* Reset some default styles */
+html, body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+/* Style links */
 a {
-  color: inherit;
+  color: #007BFF; /* Change to your preferred link color */
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
+a:hover {
+  color: #0056b3; /* Change to a slightly different shade for hover effect */
+}
+
+/* Apply box sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+  
   body {
-    color: white;
-    background: black;
+    color: #FFFFFF;
+    background: #121212; /* Dark background color */
+  }
+  
+  a {
+    color: #BB86FC; /* Accent color for links in dark mode */
+  }
+  
+  a:hover {
+    color: #9E73E6; /* Slightly different shade for link hover in dark mode */
   }
 }
