@@ -5,8 +5,9 @@
   flex-direction: column; /* Adjusted for mobile responsiveness */
   justify-content: center;
   align-items: center;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", sans-serif; /* Fancy font */
   padding: 2rem;
+  background-color: #f9f9f9; /* Light background color */
 }
 
 /* Footer */
@@ -16,7 +17,8 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", sans-serif; /* Fancy font */
+  background-color: #f9f9f9; /* Light background color */
 }
 
 /* Image */
@@ -24,29 +26,36 @@
   max-width: 100%; /* Adjusted for responsiveness */
   height: auto; /* Maintain aspect ratio */
   margin-top: 2rem; /* Added spacing from the top */
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Input */
 .input {
   width: 100%; /* Adjusted for responsiveness */
-  padding: 1rem;
-  margin-bottom: 1rem; /* Slight adjustment for spacing */
+  padding: 1.5rem; /* Increased padding for a more substantial look */
+  margin-bottom: 1.5rem; /* Slight adjustment for spacing */
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1.1rem; /* Slightly increased font size */
+  color: #333; /* Darker text color */
 }
 
 /* Title */
 .title {
-  font-size: 2rem;
+  font-size: 3rem; /* Larger title */
   margin: 2rem 0;
   text-align: center; /* Center align for better readability */
+  color: #333; /* Darker title color */
 }
 
 /* Description */
 .description {
-  font-size: 1.1rem; /* Slightly adjusted for better readability */
-  line-height: 1.5;
+  font-size: 1.3rem; /* Increased font size */
+  line-height: 1.6;
   text-align: center; /* Center align for better readability */
+  color: #555; /* Slightly darker text color */
+  max-width: 80%; /* Limit the width for better readability */
   margin-bottom: 2rem; /* Slight adjustment for spacing */
 }
 
@@ -56,16 +65,13 @@
   background-color: #007BFF; /* Changed to a more consistent color */
   border: none;
   color: #ffffff;
-  font-size: 1rem; /* Adjusted for better readability */
-  padding: 0.5rem 1rem; /* Improved padding for the button */
-  width: auto; /* Let the button adjust its width based on content */
+  font-size: 1.2rem; /* Increased font size */
+  padding: 1rem 2rem; /* Improved padding for the button */
   cursor: pointer;
-  margin-top: 1rem; /* Added spacing from the top */
+  margin-top: 1.5rem; /* Added spacing from the top */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
 }
 
-/* Responsive adjustments */
-@media (max-width: 1000px) {
-  .main {
-    padding: 1rem; /* Adjusted padding for better spacing on smaller screens */
-  }
+.button:hover {
+  background-color: #0056b3; /* Darker color on hover */
 }
