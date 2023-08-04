@@ -160,7 +160,7 @@ export default function Home() {
         <div>
           <input
             type="number"
-            placeholder="Amount of burn token"
+            placeholder="Amount"
             onChange={(e) => setTokenAmount(e.target.value)}
             className={styles.input}
           />
@@ -171,7 +171,7 @@ export default function Home() {
           disabled={!(tokenAmount > 0)}
           onClick={() => burnMemeToken(tokenAmount)}
         >
-          Burn Tokens
+          Burn 
         </button>
       </div>
     );
@@ -180,12 +180,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Token Burner</title>
+        <title>Cat and fish token burner</title>
         <meta name="description" content="burn-Dapp" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to BURNER DAPP!</h1>
+          <h1 className={styles.title}>Welcome!</h1>
           {walletConnected ? (
             <div>
               <div className={styles.description}>
@@ -200,20 +200,20 @@ export default function Home() {
                 {/* Format Ether helps us in converting a BigNumber to string */}
                 Overall{" "}
                 {parseFloat(utils.formatEther(tokensMinted)).toLocaleString()}{" "}
-                have been minted!!!
+                have been minted!
               </div>
               {renderButton()}
             </div>
           ) : (
             <button onClick={connectWallet} className={styles.button}>
-              Connect your wallet
+              Connect
             </button>
           )}
         </div>
       </div>
       <footer className={styles.footer}>
         <p className="mt-4">
-          &copy; 2023 Meme Token. All Rights Reserved.
+          &copy; . All Rights Reserved.
         </p>
       </footer>
     </div>
