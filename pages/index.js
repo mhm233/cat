@@ -156,28 +156,6 @@ export default function Home() {
     }*/
     // If user doesn't have any tokens to claim, show the mint button
     return (
-      <div style={{ display: "flex-col" }}>
-        <div>
-          <input
-            type="number"
-            placeholder="Amount"
-            onChange={(e) => setTokenAmount(e.target.value)}
-            className={styles.input}
-          />
-        </div>
-
-        <button
-          className={styles.button}
-          disabled={!(tokenAmount > 0)}
-          onClick={() => burnMemeToken(tokenAmount)}
-        >
-          Burn 
-        </button>
-      </div>
-    );
-  };
-
-  return (
     <div>
       <Head>
         <title>Cat and fish token burner</title>
@@ -189,17 +167,17 @@ export default function Home() {
           {walletConnected ? (
             <div>
               <div className={styles.description}>
-                {/* Format Ether helps us in converting a BigNumber to string */}
                 You have minted{" "}
-                {parseFloat(
-                  utils.formatEther(balanceOfCryptoDevTokens)
-                ).toLocaleString()}{" "}
+                <span className={styles.highlight}>
+                  {parseFloat(utils.formatEther(balanceOfCryptoDevTokens)).toLocaleString()}{" "}
+                </span>
                 token
               </div>
               <div className={styles.description}>
-                {/* Format Ether helps us in converting a BigNumber to string */}
                 Overall{" "}
-                {parseFloat(utils.formatEther(tokensMinted)).toLocaleString()}{" "}
+                <span className={styles.highlight}>
+                  {parseFloat(utils.formatEther(tokensMinted)).toLocaleString()}{" "}
+                </span>
                 have been minted!
               </div>
               {renderButton()}
