@@ -8,6 +8,9 @@
   font-family: "Poppins", sans-serif; /* Fancy font */
   padding: 2rem;
   background-color: #000000; /* Light background color */
+  background-image: url('/bg.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
 }
 
 /* Footer */
